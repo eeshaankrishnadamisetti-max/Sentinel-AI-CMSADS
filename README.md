@@ -1,24 +1,34 @@
-#  Sentinel-AI: Covert Micro-Signature Anti-Drone System (C-MSADS)
+# 🛰️ Sentinel-AI: Covert Micro-Signature Anti-Drone System (C-MSADS)
 
-A Proof of Concept (PoC) project built to demonstrate **drone detection using sensor fusion** — combining radar micro-signatures, RF cues, optical triggers, and IR/thermal inputs.
-
-This repository contains all files, scripts, and documentation required to **replicate or extend** the Sentinel-AI PoC in a safe, simulation-only environment.
-
----
-
-##  Purpose
-The goal of C-MSADS is to validate the idea of a **low-cost, edge-based detection node** that can:
-- Fuse data from multiple sensors
-- Detect small UAVs in near real time
-- Log and simulate a neutralization response — **without any actual RF transmission**
-
-This project is built only for **educational and research purposes.**
+A **Proof of Concept (PoC)** built to demonstrate how AI and sensor fusion can help detect drones safely and ethically.  
+Developed as a **school research project** by *Eeshaan*.
 
 ---
 
-##  Objectives
-- Achieve reliable sensor fusion on a single node (PoC)
-- Detect simulated drones within **<2 seconds**
+## 🧠 Overview
+**Sentinel-AI** combines inputs from multiple sensors — camera, RF receiver, and simulated radar — and uses a small AI model to decide whether a drone might be nearby.
+
+This repository contains the PoC code, documentation, and dataset examples for educational replication.
+
+---
+
+## ⚙️ Features
+- ✅ Sensor fusion (optical + RF + simulated radar)
+- 🤖 AI classification with Random Forest
+- 💡 Python-based simulation
+- 🧾 Logging and testing modules
+- 📡 MQTT / console alert output
+
+---
+
+## 🧰 Quick Start
+
+```bash
+git clone https://github.com/<your-username>/Sentinel-AI-CMSADS.git
+cd Sentinel-AI-CMSADS
+pip install -r requirements.txt
+python sentinel_poc_node.py
+ **<2 seconds**
 - Deliver alerts through console and MQTT topic
 - Log “neutralization” as a **software-only simulation**
 
