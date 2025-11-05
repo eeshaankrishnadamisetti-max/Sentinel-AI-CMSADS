@@ -1,0 +1,49 @@
+Sentinel-AI-CMSADS/
+├── sentinel_poc_node.py     # main PoC loop
+├── config.py                # settings
+├── requirements.txt
+├── /docs                    # reports and design
+├── /data                    # simulated readings and small dataset
+├── /tests                   # simple unit tests
+├── /scripts                 # automation & simulation helpers
+└── README.md
+
+🗺️ Roadmap
+Phase	Goal	Duration
+Q1	Simulation & AI PoC	3 months
+Q2	Add live sensors	6 months
+Q3	Outdoor testing (with approvals)	9 months
+⚠️ Safety Notice
+
+This project is for learning and simulation.
+It does not transmit, jam, or interfere with any drone or device.
+Always follow local regulations before using RF hardware.
+
+
+---
+
+### ⚙️ `config.py`
+```python
+"""
+Configuration file for Sentinel-AI PoC
+All settings used in the simulation are defined here.
+"""
+
+MODEL_PATH = "drone_detector_assets.joblib"
+
+# Simulated sensor pins (only symbolic for non-Raspberry Pi systems)
+OPTICAL_PIN = 17
+IR_PIN = 27
+
+# Loop control
+DETECTION_INTERVAL_SEC = 1
+
+# MQTT placeholder (for demonstration)
+MQTT_TOPIC = "sentinel/poc/alerts"
+BROKER_ADDRESS = "localhost"
+PORT = 1883
+
+# Simulation
+ENABLE_RF_SIMULATION = True
+ENABLE_VIDEO_SIMULATION = True
+LOG_FILE = "data/sentinel_log.txt"
