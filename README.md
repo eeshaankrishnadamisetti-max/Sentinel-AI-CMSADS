@@ -1,4 +1,4 @@
-# 🛰️ Sentinel-AI: Covert Micro-Signature Anti-Drone System (C-MSADS)
+#  Sentinel-AI: Covert Micro-Signature Anti-Drone System (C-MSADS)
 
 A Proof of Concept (PoC) project built to demonstrate **drone detection using sensor fusion** — combining radar micro-signatures, RF cues, optical triggers, and IR/thermal inputs.
 
@@ -6,7 +6,7 @@ This repository contains all files, scripts, and documentation required to **rep
 
 ---
 
-## 🎯 Purpose
+##  Purpose
 The goal of C-MSADS is to validate the idea of a **low-cost, edge-based detection node** that can:
 - Fuse data from multiple sensors
 - Detect small UAVs in near real time
@@ -16,7 +16,7 @@ This project is built only for **educational and research purposes.**
 
 ---
 
-## ⚙️ Objectives
+##  Objectives
 - Achieve reliable sensor fusion on a single node (PoC)
 - Detect simulated drones within **<2 seconds**
 - Deliver alerts through console and MQTT topic
@@ -24,7 +24,7 @@ This project is built only for **educational and research purposes.**
 
 ---
 
-## 🧩 Components & Requirements
+##  Components & Requirements
 **Hardware (optional):**
 - Raspberry Pi 4/5 or Jetson Nano  
 - mmWave radar module / HB100  
